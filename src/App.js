@@ -4,7 +4,8 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/items/')
+    {/*fetch('http://localhost:8000/items/')*/}
+    fetch('https://djangoreact-django.onrender.com/items/')
       .then(response => response.json())
       .then(data => setItems(data));
   }, []);
